@@ -1,0 +1,40 @@
+<svg width="1200" height="260" viewBox="0 0 1200 260" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+  <rect width="1200" height="260" fill="#ffffff"/>
+
+  <!-- column headers -->
+  <text x="600" y="30" text-anchor="middle" font-size="16" font-weight="700" fill="#232F3E">Pick the right depth for the moment</text>
+
+  <!-- 3 columns -->
+  <g>
+    <rect x="30" y="55" width="360" height="185" rx="10" fill="#F4F6F8" stroke="#232F3E" stroke-width="1.5"/>
+    <text x="210" y="85" text-anchor="middle" font-size="14" font-weight="700" fill="#232F3E">Quick Revision PDF</text>
+    <text x="210" y="105" text-anchor="middle" font-size="10.5" fill="#666">4 pages · flash-card style</text>
+    <line x1="55" y1="118" x2="365" y2="118" stroke="#ddd"/>
+    <text x="55" y="140" font-size="11" fill="#333">✓ Night-before-exam cram</text>
+    <text x="55" y="162" font-size="11" fill="#333">✓ Core idea per module</text>
+    <text x="55" y="184" font-size="11" fill="#333">✓ Must-know services only</text>
+    <text x="55" y="206" font-size="11" fill="#333">✗ No explanations/examples</text>
+  </g>
+
+  <g>
+    <rect x="420" y="55" width="360" height="185" rx="10" fill="#FFF7EC" stroke="#FF9900" stroke-width="1.5"/>
+    <text x="600" y="85" text-anchor="middle" font-size="14" font-weight="700" fill="#232F3E">Full Cheat Sheet (MD/PDF)</text>
+    <text x="600" y="105" text-anchor="middle" font-size="10.5" fill="#666">~35 pages · module-by-module</text>
+    <line x1="445" y1="118" x2="755" y2="118" stroke="#f0cf95"/>
+    <text x="445" y="140" font-size="11" fill="#333">✓ Real revision / first read-through</text>
+    <text x="445" y="162" font-size="11" fill="#333">✓ Key concepts + service details</text>
+    <text x="445" y="184" font-size="11" fill="#333">✓ Exam/interview tips per module</text>
+    <text x="445" y="206" font-size="11" fill="#333">✗ Not a hands-on lab guide</text>
+  </g>
+
+  <g>
+    <rect x="810" y="55" width="360" height="185" rx="10" fill="#F4F6F8" stroke="#232F3E" stroke-width="1.5"/>
+    <text x="990" y="85" text-anchor="middle" font-size="14" font-weight="700" fill="#232F3E">Services CSV Sheet</text>
+    <text x="990" y="105" text-anchor="middle" font-size="10.5" fill="#666">89 services · spreadsheet</text>
+    <line x1="835" y1="118" x2="1145" y2="118" stroke="#ddd"/>
+    <text x="835" y="140" font-size="11" fill="#333">✓ Lookup / search by service</text>
+    <text x="835" y="162" font-size="11" fill="#333">✓ Filter &amp; sort in Sheets/Excel</text>
+    <text x="835" y="184" font-size="11" fill="#333">✓ One-line use case per service</text>
+    <text x="835" y="206" font-size="11" fill="#333">✗ No architectural context</text>
+  </g>
+</svg>

@@ -1,6 +1,6 @@
 # Markdown Cheat Sheet
 
-[`AWS-Architecting-Cheatsheet.md`](AWS-Architecting-Cheatsheet.md) is the full cheat sheet in Markdown, covering all 17 modules of the "Architecting on AWS" course.
+[`AWS-Architecting-Cheatsheet.md`](AWS-Architecting-Cheatsheet.md) is the full cheat sheet in Markdown, covering Modules 01–15 plus the Appendix of the "Architecting on AWS" course (16 sections in total).
 
 GitHub renders this file directly in the browser — just click it, no download needed.
 
