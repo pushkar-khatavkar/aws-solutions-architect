@@ -1,90 +1,90 @@
-Service Name,Category,Use Case / Description,Modules Covered
-Amazon API Gateway,Application Integration,"Managed ""front door"" for APIs that handles large-scale concurrent calls and integrates with EC2, Lambda, or any web app, supporting API keys, versioning/stages, SigV4 auth, and VPC integration.",12
-Amazon Aurora,Database,"MySQL- and PostgreSQL-compatible managed relational engine with up to 5x MySQL/3x PostgreSQL throughput, replicated six ways across three Availability Zones, supporting up to 15 low-latency read replicas and global databases.","04, 08"
-Amazon Aurora Serverless,Database,"On-demand auto-scaling Aurora configuration that starts, stops, and scales capacity (ACUs) based on application need with no downtime, good for spiky/unpredictable workloads.",08
-Amazon CloudFront,Networking & Content Delivery,"AWS's global CDN that caches and delivers content from edge locations nearest the user, integrating with AWS Shield/AWS WAF for security and accelerating S3 uploads via Transfer Acceleration.","01, 02, 08, 10, 12, 13, 14, Appendix"
-Amazon CloudWatch,Management & Governance,"Collects metrics, logs, and events, and triggers alarms and automated actions such as scaling or notifications based on resource state.","03, 06, 08, 11"
-Amazon CloudWatch Events,Management & Governance,Event bus/trigger source that delivers events such as Spot Instance interruption notices and triggers scheduled or event-driven workflows like Step Functions or Lambda.,"03, 12"
-Amazon Cognito,Security/Identity/Compliance,"Fully managed authentication, authorization, and user management for web/mobile apps via user pools (sign-up/sign-in) and identity pools (temporary AWS credentials).","07, 12"
-Amazon DynamoDB,Database,"Fully managed non-relational (NoSQL) database with extreme horizontal scaling and single-digit millisecond latency, supporting Auto Scaling or On-Demand capacity, Adaptive Capacity for hot partitions, and Global Tables for multi-region multi-master replication.","04, 06, 08, 10, 12, 13"
-Amazon DynamoDB Accelerator (DAX),Database,"Fully managed, DynamoDB-API-compatible in-memory cache delivering microsecond read latency for DynamoDB tables.",10
-Amazon EBS (Amazon Elastic Block Store),Storage,"Persistent, durable block storage volumes attachable to a single EC2 instance at a time, supporting point-in-time snapshots stored in S3 and multiple volume types (General Purpose SSD, Provisioned IOPS SSD, Throughput Optimized HDD, Cold HDD).","03, 13"
-Amazon EC2,Compute,"Resizable virtual server instances for general compute workloads, used throughout the course as application servers, database hosts, and producers/consumers behind load balancers and queues.","03, 04, 05, 06, 07, 09, 10, 11, 13, 14, Appendix"
-Amazon EC2 Auto Scaling,Compute,"Automatically launches and terminates EC2 instances across Availability Zones based on demand or schedule, integrating with load balancers.",08
-Amazon ECR (Amazon Elastic Container Registry),Containers,Registry for storing and managing container images used by ECS/EKS.,12
-Amazon ECS (Amazon Elastic Container Service),Containers,"Managed container orchestration service that schedules and scales Docker containers across a cluster, supporting EC2 or Fargate launch types.",12
-Amazon EFS (Amazon Elastic File System),Storage,"Managed, scalable NFSv4 shared file system for Linux workloads, mountable by many EC2 instances across Availability Zones, VPCs, and accounts.","03, 14"
-Amazon EKS (Amazon Elastic Kubernetes Service),Containers,"Managed Kubernetes service for running containerized applications, which can also run on Fargate.",12
-Amazon ElastiCache,Database,Managed in-memory data store (Redis or Memcached) that sits in front of a database to reduce latency and database load.,"04, 10, 12"
-Amazon FSx for Lustre,Storage,"Managed, high-performance POSIX file system for HPC/ML/media processing workloads that integrates with Amazon S3.",03
-Amazon FSx for Windows File Server,Storage,Managed native Windows (SMB/NTFS) shared file system with Active Directory integration.,03
-Amazon Machine Image (AMI),Compute,"Template containing a root volume, launch permissions, and block device mapping used to launch EC2 instances repeatably.",03
-Amazon MQ,Application Integration,"Managed Apache ActiveMQ message broker for migrating existing messaging applications that use standard protocols (JMS, AMQP, MQTT, etc.) without rewriting code.",11
-Amazon Neptune,Database,Managed non-relational graph database option for highly connected data.,04
-Amazon QuickSight,Analytics,BI tool example used for analyzing exported S3 storage class analytics data.,02
-Amazon RDS,Database,"Fully managed relational database service supporting MySQL, MariaDB, PostgreSQL, Oracle, and SQL Server, provisioned in minutes with read replicas, vertical/storage Auto Scaling, and cross-region snapshots for DR.","04, 05, 08, 09, 10, 11, 12, 13, 14"
-Amazon Redshift,Analytics,"Managed relational data warehouse for analytics workloads, encryptable using AWS KMS-managed data keys.","04, Appendix"
-Amazon Route 53,Networking & Content Delivery,"Highly available, scalable DNS service with domain registration, health checks, and multiple traffic-routing policies (simple, weighted, latency-based, geolocation, geoproximity, multi-value, failover) for multi-region HA.","01, 06, 08, 09, 10, 12, 13, 14, Appendix"
-Amazon S3,Storage,"Scalable, highly durable (11 nines) object storage used for static content hosting, backups, data lakes, analytics source data, and as a primary backup/DR target supporting versioning and cross-region replication.","02, 06, 07, 10, 11, 12, 13, 14"
-Amazon S3 Glacier,Storage,"Very low-cost, long-term archival storage with retrieval times from minutes (Expedited) to hours (Standard/Bulk), with data kept in regional vaults.","02, 13"
-Amazon S3 Glacier Deep Archive,Storage,"Cheapest S3 storage tier for data rarely or never accessed, with retrieval within about 12 hours.",02
-Amazon S3 Intelligent-Tiering,Storage,Automatically moves objects between access tiers based on changing access patterns.,02
-Amazon S3 One Zone-IA,Storage,"Infrequent-access storage in a single Availability Zone, about 20% cheaper than Standard-IA but with lower resilience.",02
-Amazon S3 Reduced Redundancy Storage (RRS),Storage,"Lower-redundancy storage tier for noncritical, reproducible data.",02
-Amazon S3 Standard-Infrequent Access (S3 Standard-IA),Storage,Lower-cost storage tier for data needing immediate access but accessed infrequently.,02
-Amazon SNS (Amazon Simple Notification Service),Application Integration,"Managed pub/sub notification service that pushes messages from topics to multiple subscriber types (email, SMS, HTTP/S, SQS, Lambda), used for alerts and event-driven triggers.","02, 04, 08, 11, 12"
-Amazon SQS (Amazon Simple Queue Service),Application Integration,"Fully managed message queue that buffers and asynchronously decouples producers from consumers, offering Standard (at-least-once, high throughput) and FIFO (exactly-once, ordered) queue types with dead-letter queue and visibility timeout support.","09, 11, 12, 14"
-Amazon VPC (Amazon Virtual Private Cloud),Networking & Content Delivery,"Isolated virtual network dedicated to an AWS account that defines IP ranges, subnets, route tables, and gateways, deployed into one Region and spanning multiple Availability Zones.","05, 13"
-Amazon VPC Flow Logs,Management & Governance,"Captures accepted/rejected/all IP traffic metadata for a VPC, subnet, or ENI for troubleshooting and security monitoring.",08
-AWS App Mesh,Containers,"Service mesh that provides traffic control, metrics, logs, and traces across microservices using the Envoy proxy.",12
-AWS Auto Scaling,Management & Governance,"Automatically adjusts EC2 capacity to match demand, with Auto Scaling groups able to span Availability Zones to improve resilience.",14
-AWS Backup,Storage,"Fully managed, centralized, policy- and tag-based backup service across EBS, EC2, RDS, DynamoDB, EFS, and Storage Gateway.",13
-AWS Cloud Map,Containers,"Service discovery that registers application resources (databases, queues, microservices) under custom namespaces and health-checks them.",12
-AWS CloudFormation,Developer Tools/Automation,"Describes AWS infrastructure as JSON/YAML templates and provisions, updates, and repeatably redeploys it as ""stacks,"" with drift detection and change sets.","09, 13"
-AWS CloudTrail,Management & Governance,"Logs and records all API calls and account activity across AWS services for auditing, security analysis, and compliance.","07, 08, 12, Appendix"
-AWS CodeCommit,Developer Tools/Automation,Managed version-control service mentioned as an option for storing CloudFormation templates as code.,09
-AWS Compute Optimizer,Management & Governance,ML-based recommendations for optimal EC2 instance types to cut cost and improve performance.,03
-AWS Cost Explorer,Management & Governance,Visualizes and forecasts AWS spending patterns over up to 13 months of historical data.,08
-AWS Database Migration Service (AWS DMS),Migration & Transfer,"Migrates databases to/from AWS (EC2, RDS, S3, on-premises), supporting homogeneous and heterogeneous engine migrations via one-time or ongoing replication.",04
-AWS DataSync,Migration & Transfer,"Automated data transfer service that securely and quickly syncs on-premises or cloud file data into Amazon S3 or Amazon EFS, faster than open-source tools.","02, 13"
-AWS Direct Connect,Networking & Content Delivery,"Dedicated private 1 Gbps or 10 Gbps network connection between on-premises and AWS that bypasses the public internet, offering predictable performance and lower data transfer costs.","03, 06, 13"
-AWS Elastic Beanstalk,Developer Tools/Automation,"Fully managed PaaS that provisions and manages the entire application stack (load balancer, Auto Scaling, etc.) so developers only supply code.","09, 13"
-AWS Elemental MediaConvert,Analytics,File-based video transcoding service used in the Video on Demand (VOD) reference architecture.,12
-AWS Fargate,Containers,Serverless compute engine for containers that runs ECS or EKS workloads without provisioning or managing clusters or servers.,12
-AWS Global Accelerator,Networking & Content Delivery,"Improves failover speed and global traffic routing using static anycast IP addresses, recommended for stringent SLAs.",06
-AWS GovCloud (US),Security/Identity/Compliance,Isolated AWS region for US government workloads with specific regulatory and compliance needs.,01
-AWS IAM,Security/Identity/Compliance,"Manages users, groups, roles, and policies to control access to AWS resources and APIs, including which users/roles can manage or use KMS keys.","07, Appendix"
-AWS KMS (AWS Key Management Service),Security/Identity/Compliance,"Managed encryption key service using envelope encryption (master keys encrypt data keys) to protect data in S3, EBS, Redshift, and custom applications, integrating with CloudTrail for audit logging.","02, 07, 11, Appendix"
-AWS Lambda,Compute,"Runs stateless code without provisioning servers, triggered by events or schedules (S3 changes, DynamoDB streams, SNS/SQS, CloudWatch Events, etc.), with a 15-minute max execution time; Lambda@Edge runs functions at CloudFront edge locations.","11, 12"
-AWS Landing Zone,Management & Governance,"Automates setup of a secure, multi-account AWS environment following best practices (multi-account structure, account vending machine, notifications, user access).",07
-AWS License Manager,Management & Governance,Manages and enforces software license usage rules across EC2 instances.,03
-AWS OpsWorks,Developer Tools/Automation,"Configuration management service (Chef/Puppet-based) using a Stacks → Layers model with lifecycle event hooks to define and automate application architecture, including automatic host replacement.","09, 13"
-AWS Organizations,Management & Governance,"Centrally manages policies, billing, and account creation across multiple AWS accounts using Organizational Units and Service Control Policies.",07
-AWS Policy Generator,Security/Identity/Compliance,Tool to help author S3 bucket policies and other AWS access policies.,02
-AWS PrivateLink / VPC Endpoints,Networking & Content Delivery,"Private connectivity from a VPC to supported AWS or partner services without traversing the internet, via Gateway Endpoints (S3, DynamoDB) or Interface Endpoints (most other services).",06
-AWS Schema Conversion Tool,Migration & Transfer,"Standalone tool that converts database schema from one engine to another (e.g., Oracle → Aurora/MySQL/PostgreSQL).",04
-AWS Shield,Security/Identity/Compliance,"Managed DDoS protection; Standard tier is automatic and free against common infrastructure-layer (L3/L4) attacks, Advanced tier adds expanded protection and the 24x7 DDoS Response Team for EC2, ELB, CloudFront, and Route 53.",Appendix
-AWS Snowball,Migration & Transfer,"Petabyte-scale physical data transport appliance for moving data in/out of AWS faster than internet transfer, requiring no code or hardware purchase.","02, 13"
-AWS Snowball Edge,Migration & Transfer,"Snowball variant with onboard compute for edge processing in disconnected environments, integrated with AWS DMS for migrating multi-terabyte/petabyte databases without consuming network bandwidth.","02, 04"
-AWS Snowmobile,Migration & Transfer,Exabyte-scale physical data transport service via a shipping-container-sized truck trailer.,02
-AWS Step Functions,Application Integration,"Serverless orchestration service that coordinates Lambda functions and microservices as visual state machines using the JSON-based Amazon States Language, with retry, parallel, and choice logic.",12
-AWS Storage Gateway,Storage,"Hybrid storage service connecting on-premises environments to AWS storage via three interfaces: File Gateway (NFS/SMB to S3), Volume Gateway (iSCSI block storage backed by EBS/S3), and Tape Gateway (virtual tape library backed by S3/Glacier).",13
-AWS STS,Security/Identity/Compliance,"Issues temporary, limited-privilege security credentials for IAM users, federated users, or assumed roles.","07, 12"
-AWS Systems Manager,Developer Tools/Automation,"Automates configuration, patching, and management of EC2 and on-premises instances at scale (Run Command, Patch Manager, Maintenance Windows, State Manager, Session Manager, Inventory).",09
-AWS Transfer for SFTP,Migration & Transfer,Fully managed SFTP service for transferring files directly into Amazon S3.,02
-AWS Transit Gateway,Networking & Content Delivery,"Fully managed hub-and-spoke connectivity service that connects up to 5,000 VPCs and on-premises networks through a single gateway with centralized routing.",06
-AWS VPN,Networking & Content Delivery,"VPN connectivity option over the internet, via a Virtual Private Gateway and Customer Gateway, used for on-premises access to AWS resources such as EFS/FSx.","03, 06"
-AWS WAF,Security/Identity/Compliance,"Web application firewall operating at Layer 7 that filters HTTP/HTTPS traffic by rules (OWASP Top 10, rate limiting, IP/header/body/URI, whitelist/blacklist) to mitigate application-layer attacks including DDoS.","10, 12, Appendix"
-AWS Well-Architected Tool,Management & Governance,Free self-service tool to review workloads against the AWS Well-Architected Framework's five pillars of best practices.,"01, 14"
-EC2 Image Builder,Developer Tools/Automation,"Automates the creation, testing, and distribution of golden AMIs.",03
-EC2 Instance Store,Storage,"Temporary block storage physically attached to the host instance, lost on stop/termination, used for caches/buffers/scratch data.",03
-Elastic Fabric Adapter (EFA),Networking & Content Delivery,High-performance network adapter for HPC workloads requiring low-latency inter-instance communication.,03
-Elastic IP Addresses,Networking & Content Delivery,Static public IPv4 addresses (5 per Region by default) that can be remapped instantly between instances or interfaces for failover.,05
-Elastic Load Balancing (ELB),Networking & Content Delivery,"Managed service distributing incoming traffic across EC2 instances, containers, and IP addresses; includes Application Load Balancer (Layer 7), Network Load Balancer (Layer 4), and Classic Load Balancer, and supports sticky sessions.","06, 08, 10, 13, 14, Appendix"
-Elastic Network Interfaces (ENI),Networking & Content Delivery,"Virtual network interfaces that carry a private IP, Elastic IP, and MAC address, attachable/movable across EC2 instances within the same Availability Zone.",05
-Internet Gateway,Networking & Content Delivery,"Horizontally scaled, redundant VPC component enabling communication between VPC instances and the internet, required for public subnet connectivity.",05
-NAT Gateway,Networking & Content Delivery,Allows private subnet instances to initiate outbound internet traffic while blocking unsolicited inbound traffic.,05
-Network ACLs,Security/Identity/Compliance,"Stateless firewalls controlling traffic at the subnet boundary, requiring explicit inbound and outbound rules.",05
-Security Groups,Security/Identity/Compliance,"Stateful virtual firewalls controlling inbound/outbound traffic at the instance (ENI) level, defaulting to deny-all inbound and allow-all outbound.",05
-Virtual Private Gateway (VGW),Networking & Content Delivery,The AWS-side VPN concentrator used to establish IPsec VPN connections between a VPC and an external network.,06
-VPC Peering,Networking & Content Delivery,"Private, non-transitive one-to-one connection between two VPCs using private IP addresses, staying on the AWS backbone.",06
+Service Name,Use Case / Description,Modules Covered
+Amazon API Gateway,"Managed ""front door"" for APIs that handles large-scale concurrent calls and integrates with EC2, Lambda, or any web app, supporting API keys, versioning/stages, SigV4 auth, and VPC integration.",12
+Amazon Aurora,"MySQL- and PostgreSQL-compatible managed relational engine with up to 5x MySQL/3x PostgreSQL throughput, replicated six ways across three Availability Zones, supporting up to 15 low-latency read replicas and global databases.","04, 08"
+Amazon Aurora Serverless,"On-demand auto-scaling Aurora configuration that starts, stops, and scales capacity (ACUs) based on application need with no downtime, good for spiky/unpredictable workloads.",08
+Amazon CloudFront,"AWS's global CDN that caches and delivers content from edge locations nearest the user, integrating with AWS Shield/AWS WAF for security and accelerating S3 uploads via Transfer Acceleration.","01, 02, 08, 10, 12, 13, 14, Appendix"
+Amazon CloudWatch,"Collects metrics, logs, and events, and triggers alarms and automated actions such as scaling or notifications based on resource state.","03, 06, 08, 11"
+Amazon CloudWatch Events,Event bus/trigger source that delivers events such as Spot Instance interruption notices and triggers scheduled or event-driven workflows like Step Functions or Lambda.,"03, 12"
+Amazon Cognito,"Fully managed authentication, authorization, and user management for web/mobile apps via user pools (sign-up/sign-in) and identity pools (temporary AWS credentials).","07, 12"
+Amazon DynamoDB,"Fully managed non-relational (NoSQL) database with extreme horizontal scaling and single-digit millisecond latency, supporting Auto Scaling or On-Demand capacity, Adaptive Capacity for hot partitions, and Global Tables for multi-region multi-master replication.","04, 06, 08, 10, 12, 13"
+Amazon DynamoDB Accelerator (DAX),"Fully managed, DynamoDB-API-compatible in-memory cache delivering microsecond read latency for DynamoDB tables.",10
+Amazon EBS (Amazon Elastic Block Store),"Persistent, durable block storage volumes attachable to a single EC2 instance at a time, supporting point-in-time snapshots stored in S3 and multiple volume types (General Purpose SSD, Provisioned IOPS SSD, Throughput Optimized HDD, Cold HDD).","03, 13"
+Amazon EC2,"Resizable virtual server instances for general compute workloads, used throughout the course as application servers, database hosts, and producers/consumers behind load balancers and queues.","03, 04, 05, 06, 07, 09, 10, 11, 13, 14, Appendix"
+Amazon EC2 Auto Scaling,"Automatically launches and terminates EC2 instances across Availability Zones based on demand or schedule, integrating with load balancers.",08
+Amazon ECR (Amazon Elastic Container Registry),Registry for storing and managing container images used by ECS/EKS.,12
+Amazon ECS (Amazon Elastic Container Service),"Managed container orchestration service that schedules and scales Docker containers across a cluster, supporting EC2 or Fargate launch types.",12
+Amazon EFS (Amazon Elastic File System),"Managed, scalable NFSv4 shared file system for Linux workloads, mountable by many EC2 instances across Availability Zones, VPCs, and accounts.","03, 14"
+Amazon EKS (Amazon Elastic Kubernetes Service),"Managed Kubernetes service for running containerized applications, which can also run on Fargate.",12
+Amazon ElastiCache,Managed in-memory data store (Redis or Memcached) that sits in front of a database to reduce latency and database load.,"04, 10, 12"
+Amazon FSx for Lustre,"Managed, high-performance POSIX file system for HPC/ML/media processing workloads that integrates with Amazon S3.",03
+Amazon FSx for Windows File Server,Managed native Windows (SMB/NTFS) shared file system with Active Directory integration.,03
+Amazon Machine Image (AMI),"Template containing a root volume, launch permissions, and block device mapping used to launch EC2 instances repeatably.",03
+Amazon MQ,"Managed Apache ActiveMQ message broker for migrating existing messaging applications that use standard protocols (JMS, AMQP, MQTT, etc.) without rewriting code.",11
+Amazon Neptune,Managed non-relational graph database option for highly connected data.,04
+Amazon QuickSight,BI tool example used for analyzing exported S3 storage class analytics data.,02
+Amazon RDS,"Fully managed relational database service supporting MySQL, MariaDB, PostgreSQL, Oracle, and SQL Server, provisioned in minutes with read replicas, vertical/storage Auto Scaling, and cross-region snapshots for DR.","04, 05, 08, 09, 10, 11, 12, 13, 14"
+Amazon Redshift,"Managed relational data warehouse for analytics workloads, encryptable using AWS KMS-managed data keys.","04, Appendix"
+Amazon Route 53,"Highly available, scalable DNS service with domain registration, health checks, and multiple traffic-routing policies (simple, weighted, latency-based, geolocation, geoproximity, multi-value, failover) for multi-region HA.","01, 06, 08, 09, 10, 12, 13, 14, Appendix"
+Amazon S3,"Scalable, highly durable (11 nines) object storage used for static content hosting, backups, data lakes, analytics source data, and as a primary backup/DR target supporting versioning and cross-region replication.","02, 06, 07, 10, 11, 12, 13, 14"
+Amazon S3 Glacier,"Very low-cost, long-term archival storage with retrieval times from minutes (Expedited) to hours (Standard/Bulk), with data kept in regional vaults.","02, 13"
+Amazon S3 Glacier Deep Archive,"Cheapest S3 storage tier for data rarely or never accessed, with retrieval within about 12 hours.",02
+Amazon S3 Intelligent-Tiering,Automatically moves objects between access tiers based on changing access patterns.,02
+Amazon S3 One Zone-IA,"Infrequent-access storage in a single Availability Zone, about 20% cheaper than Standard-IA but with lower resilience.",02
+Amazon S3 Reduced Redundancy Storage (RRS),"Lower-redundancy storage tier for noncritical, reproducible data.",02
+Amazon S3 Standard-Infrequent Access (S3 Standard-IA),Lower-cost storage tier for data needing immediate access but accessed infrequently.,02
+Amazon SNS (Amazon Simple Notification Service),"Managed pub/sub notification service that pushes messages from topics to multiple subscriber types (email, SMS, HTTP/S, SQS, Lambda), used for alerts and event-driven triggers.","02, 04, 08, 11, 12"
+Amazon SQS (Amazon Simple Queue Service),"Fully managed message queue that buffers and asynchronously decouples producers from consumers, offering Standard (at-least-once, high throughput) and FIFO (exactly-once, ordered) queue types with dead-letter queue and visibility timeout support.","09, 11, 12, 14"
+Amazon VPC (Amazon Virtual Private Cloud),"Isolated virtual network dedicated to an AWS account that defines IP ranges, subnets, route tables, and gateways, deployed into one Region and spanning multiple Availability Zones.","05, 13"
+Amazon VPC Flow Logs,"Captures accepted/rejected/all IP traffic metadata for a VPC, subnet, or ENI for troubleshooting and security monitoring.",08
+AWS App Mesh,"Service mesh that provides traffic control, metrics, logs, and traces across microservices using the Envoy proxy.",12
+AWS Auto Scaling,"Automatically adjusts EC2 capacity to match demand, with Auto Scaling groups able to span Availability Zones to improve resilience.",14
+AWS Backup,"Fully managed, centralized, policy- and tag-based backup service across EBS, EC2, RDS, DynamoDB, EFS, and Storage Gateway.",13
+AWS Cloud Map,"Service discovery that registers application resources (databases, queues, microservices) under custom namespaces and health-checks them.",12
+AWS CloudFormation,"Describes AWS infrastructure as JSON/YAML templates and provisions, updates, and repeatably redeploys it as ""stacks,"" with drift detection and change sets.","09, 13"
+AWS CloudTrail,"Logs and records all API calls and account activity across AWS services for auditing, security analysis, and compliance.","07, 08, 12, Appendix"
+AWS CodeCommit,Managed version-control service mentioned as an option for storing CloudFormation templates as code.,09
+AWS Compute Optimizer,ML-based recommendations for optimal EC2 instance types to cut cost and improve performance.,03
+AWS Cost Explorer,Visualizes and forecasts AWS spending patterns over up to 13 months of historical data.,08
+AWS Database Migration Service (AWS DMS),"Migrates databases to/from AWS (EC2, RDS, S3, on-premises), supporting homogeneous and heterogeneous engine migrations via one-time or ongoing replication.",04
+AWS DataSync,"Automated data transfer service that securely and quickly syncs on-premises or cloud file data into Amazon S3 or Amazon EFS, faster than open-source tools.","02, 13"
+AWS Direct Connect,"Dedicated private 1 Gbps or 10 Gbps network connection between on-premises and AWS that bypasses the public internet, offering predictable performance and lower data transfer costs.","03, 06, 13"
+AWS Elastic Beanstalk,"Fully managed PaaS that provisions and manages the entire application stack (load balancer, Auto Scaling, etc.) so developers only supply code.","09, 13"
+AWS Elemental MediaConvert,File-based video transcoding service used in the Video on Demand (VOD) reference architecture.,12
+AWS Fargate,Serverless compute engine for containers that runs ECS or EKS workloads without provisioning or managing clusters or servers.,12
+AWS Global Accelerator,"Improves failover speed and global traffic routing using static anycast IP addresses, recommended for stringent SLAs.",06
+AWS GovCloud (US),Isolated AWS region for US government workloads with specific regulatory and compliance needs.,01
+AWS IAM,"Manages users, groups, roles, and policies to control access to AWS resources and APIs, including which users/roles can manage or use KMS keys.","07, Appendix"
+AWS KMS (AWS Key Management Service),"Managed encryption key service using envelope encryption (master keys encrypt data keys) to protect data in S3, EBS, Redshift, and custom applications, integrating with CloudTrail for audit logging.","02, 07, 11, Appendix"
+AWS Lambda,"Runs stateless code without provisioning servers, triggered by events or schedules (S3 changes, DynamoDB streams, SNS/SQS, CloudWatch Events, etc.), with a 15-minute max execution time; Lambda@Edge runs functions at CloudFront edge locations.","11, 12"
+AWS Landing Zone,"Automates setup of a secure, multi-account AWS environment following best practices (multi-account structure, account vending machine, notifications, user access).",07
+AWS License Manager,Manages and enforces software license usage rules across EC2 instances.,03
+AWS OpsWorks,"Configuration management service (Chef/Puppet-based) using a Stacks → Layers model with lifecycle event hooks to define and automate application architecture, including automatic host replacement.","09, 13"
+AWS Organizations,"Centrally manages policies, billing, and account creation across multiple AWS accounts using Organizational Units and Service Control Policies.",07
+AWS Policy Generator,Tool to help author S3 bucket policies and other AWS access policies.,02
+AWS PrivateLink / VPC Endpoints,"Private connectivity from a VPC to supported AWS or partner services without traversing the internet, via Gateway Endpoints (S3, DynamoDB) or Interface Endpoints (most other services).",06
+AWS Schema Conversion Tool,"Standalone tool that converts database schema from one engine to another (e.g., Oracle → Aurora/MySQL/PostgreSQL).",04
+AWS Shield,"Managed DDoS protection; Standard tier is automatic and free against common infrastructure-layer (L3/L4) attacks, Advanced tier adds expanded protection and the 24x7 DDoS Response Team for EC2, ELB, CloudFront, and Route 53.",Appendix
+AWS Snowball,"Petabyte-scale physical data transport appliance for moving data in/out of AWS faster than internet transfer, requiring no code or hardware purchase.","02, 13"
+AWS Snowball Edge,"Snowball variant with onboard compute for edge processing in disconnected environments, integrated with AWS DMS for migrating multi-terabyte/petabyte databases without consuming network bandwidth.","02, 04"
+AWS Snowmobile,Exabyte-scale physical data transport service via a shipping-container-sized truck trailer.,02
+AWS Step Functions,"Serverless orchestration service that coordinates Lambda functions and microservices as visual state machines using the JSON-based Amazon States Language, with retry, parallel, and choice logic.",12
+AWS Storage Gateway,"Hybrid storage service connecting on-premises environments to AWS storage via three interfaces: File Gateway (NFS/SMB to S3), Volume Gateway (iSCSI block storage backed by EBS/S3), and Tape Gateway (virtual tape library backed by S3/Glacier).",13
+AWS STS,"Issues temporary, limited-privilege security credentials for IAM users, federated users, or assumed roles.","07, 12"
+AWS Systems Manager,"Automates configuration, patching, and management of EC2 and on-premises instances at scale (Run Command, Patch Manager, Maintenance Windows, State Manager, Session Manager, Inventory).",09
+AWS Transfer for SFTP,Fully managed SFTP service for transferring files directly into Amazon S3.,02
+AWS Transit Gateway,"Fully managed hub-and-spoke connectivity service that connects up to 5,000 VPCs and on-premises networks through a single gateway with centralized routing.",06
+AWS VPN,"VPN connectivity option over the internet, via a Virtual Private Gateway and Customer Gateway, used for on-premises access to AWS resources such as EFS/FSx.","03, 06"
+AWS WAF,"Web application firewall operating at Layer 7 that filters HTTP/HTTPS traffic by rules (OWASP Top 10, rate limiting, IP/header/body/URI, whitelist/blacklist) to mitigate application-layer attacks including DDoS.","10, 12, Appendix"
+AWS Well-Architected Tool,Free self-service tool to review workloads against the AWS Well-Architected Framework's five pillars of best practices.,"01, 14"
+EC2 Image Builder,"Automates the creation, testing, and distribution of golden AMIs.",03
+EC2 Instance Store,"Temporary block storage physically attached to the host instance, lost on stop/termination, used for caches/buffers/scratch data.",03
+Elastic Fabric Adapter (EFA),High-performance network adapter for HPC workloads requiring low-latency inter-instance communication.,03
+Elastic IP Addresses,Static public IPv4 addresses (5 per Region by default) that can be remapped instantly between instances or interfaces for failover.,05
+Elastic Load Balancing (ELB),"Managed service distributing incoming traffic across EC2 instances, containers, and IP addresses; includes Application Load Balancer (Layer 7), Network Load Balancer (Layer 4), and Classic Load Balancer, and supports sticky sessions.","06, 08, 10, 13, 14, Appendix"
+Elastic Network Interfaces (ENI),"Virtual network interfaces that carry a private IP, Elastic IP, and MAC address, attachable/movable across EC2 instances within the same Availability Zone.",05
+Internet Gateway,"Horizontally scaled, redundant VPC component enabling communication between VPC instances and the internet, required for public subnet connectivity.",05
+NAT Gateway,Allows private subnet instances to initiate outbound internet traffic while blocking unsolicited inbound traffic.,05
+Network ACLs,"Stateless firewalls controlling traffic at the subnet boundary, requiring explicit inbound and outbound rules.",05
+Security Groups,"Stateful virtual firewalls controlling inbound/outbound traffic at the instance (ENI) level, defaulting to deny-all inbound and allow-all outbound.",05
+Virtual Private Gateway (VGW),The AWS-side VPN concentrator used to establish IPsec VPN connections between a VPC and an external network.,06
+VPC Peering,"Private, non-transitive one-to-one connection between two VPCs using private IP addresses, staying on the AWS backbone.",06
