@@ -1,0 +1,28 @@
+<svg width="1200" height="260" viewBox="0 0 1200 260" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#232F3E"/>
+      <stop offset="100%" stop-color="#0F1B2B"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="260" fill="url(#bg)"/>
+
+  <!-- simple abstract "cloud of boxes" motif, not an AWS logo -->
+  <g opacity="0.9">
+    <rect x="70" y="70" width="70" height="70" rx="8" fill="#FF9900"/>
+    <rect x="150" y="100" width="50" height="50" rx="8" fill="#FFFFFF" opacity="0.15"/>
+    <rect x="70" y="150" width="50" height="50" rx="8" fill="#FFFFFF" opacity="0.15"/>
+    <line x1="105" y1="140" x2="105" y2="150" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="3"/>
+    <line x1="140" y1="105" x2="150" y2="110" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="3"/>
+  </g>
+
+  <text x="260" y="110" font-family="Helvetica, Arial, sans-serif" font-size="44" font-weight="700" fill="#FFFFFF">
+    AWS Architecting Cheat Sheet
+  </text>
+  <text x="260" y="150" font-family="Helvetica, Arial, sans-serif" font-size="20" fill="#FF9900">
+    Student reference for the "Architecting on AWS" course
+  </text>
+  <text x="260" y="185" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#CBD5E0">
+    17 modules · Cheat sheet PDF · AWS service reference sheet
+  </text>
+</svg>

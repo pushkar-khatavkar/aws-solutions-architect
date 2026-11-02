@@ -1,0 +1,12 @@
+<svg width="300" height="180" viewBox="0 0 300 180" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="180" rx="12" fill="#13202F"/>
+  <rect x="30" y="30" width="150" height="120" rx="6" fill="#FFFFFF"/>
+  <rect x="30" y="30" width="150" height="24" rx="6" fill="#34A853"/>
+  <line x1="30" y1="78" x2="180" y2="78" stroke="#CBD5E0" stroke-width="2"/>
+  <line x1="30" y1="102" x2="180" y2="102" stroke="#CBD5E0" stroke-width="2"/>
+  <line x1="30" y1="126" x2="180" y2="126" stroke="#CBD5E0" stroke-width="2"/>
+  <line x1="80" y1="54" x2="80" y2="150" stroke="#CBD5E0" stroke-width="2"/>
+  <line x1="130" y1="54" x2="130" y2="150" stroke="#CBD5E0" stroke-width="2"/>
+  <text x="200" y="90" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#FFFFFF">Services</text>
+  <text x="200" y="114" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#FFFFFF">CSV Sheet</text>
+</svg>

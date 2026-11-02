@@ -1,0 +1,11 @@
+<svg width="300" height="180" viewBox="0 0 300 180" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="180" rx="12" fill="#13202F"/>
+  <rect x="30" y="30" width="150" height="120" rx="6" fill="#FFFFFF"/>
+  <rect x="42" y="46" width="90" height="10" rx="2" fill="#232F3E"/>
+  <rect x="42" y="66" width="126" height="6" rx="2" fill="#CBD5E0"/>
+  <rect x="42" y="80" width="126" height="6" rx="2" fill="#CBD5E0"/>
+  <rect x="42" y="94" width="90" height="6" rx="2" fill="#CBD5E0"/>
+  <rect x="42" y="114" width="60" height="8" rx="2" fill="#FF9900"/>
+  <text x="200" y="100" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#FFFFFF">Markdown</text>
+  <text x="200" y="124" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#FFFFFF">Cheat Sheet</text>
+</svg>

@@ -1,0 +1,14 @@
+# Original course source material — never commit (copyrighted AWS training content)
+extracted/
+AAI-PPT-*/
+AAI-PPT-*.zip
+*.pptx
+
+# Build artifacts
+cheatsheet/_build.html
+*.pyc
+__pycache__/
+
+# OS / editor junk
+.DS_Store
+Thumbs.db

@@ -1,0 +1,12 @@
+<svg width="300" height="180" viewBox="0 0 300 180" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="180" rx="12" fill="#13202F"/>
+  <rect x="30" y="25" width="110" height="130" rx="6" fill="#FFFFFF"/>
+  <polygon points="110,25 140,55 110,55" fill="#D9D9D9"/>
+  <rect x="42" y="70" width="86" height="8" rx="2" fill="#E53E3E"/>
+  <text x="46" y="76" font-family="Helvetica, Arial, sans-serif" font-size="7" font-weight="700" fill="#FFFFFF">PDF</text>
+  <rect x="42" y="90" width="86" height="6" rx="2" fill="#CBD5E0"/>
+  <rect x="42" y="104" width="86" height="6" rx="2" fill="#CBD5E0"/>
+  <rect x="42" y="118" width="60" height="6" rx="2" fill="#CBD5E0"/>
+  <text x="190" y="90" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#FFFFFF">Printable</text>
+  <text x="190" y="114" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#FFFFFF">PDF</text>
+</svg>
